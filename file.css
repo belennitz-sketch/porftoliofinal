@@ -1,0 +1,262 @@
+/* Reset básico */
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+body {
+  font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a;
+  color: #eee;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #111;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 0 12px #7b1f24aa;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.navbar ul li a {
+  color: #ddd;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.08em;
+  padding-bottom: 0.3rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  color: #7b1f24;
+  border-bottom: 3px solid #7b1f24;
+  text-shadow: 0 0 8px #7b1f24aa;
+}
+
+/* Contenido de la página */
+main {
+  flex-grow: 1;
+  max-width: 900px;
+  margin: 2rem auto 4rem;
+  padding: 0 1rem;
+}
+
+/* Secciones */
+.section {
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #7b1f24aa;
+}
+
+.inicio h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  text-align: center;
+  color: #7b1f24;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.1rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 12px #7b1f24cc;
+}
+
+.inicio h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #eee;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.1em;
+}
+
+.intro-text {
+  text-align: center;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.5;
+  color: #ddd;
+  font-weight: 300;
+  padding: 0 1rem;
+}
+
+.magical-line {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #7b1f24;
+  text-align: center;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.12em;
+  text-shadow:
+    0 0 6px #7b1f24cc,
+    0 0 12px #a72828aa;
+}
+
+/* Showreel */
+.showreel h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 2rem;
+  text-align: center;
+  color: #eee;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.1em;
+}
+
+.showreel p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: #bbb;
+  max-width: 640px;
+  margin: 0 auto 2rem auto;
+}
+
+.video-wrapper {
+  max-width: 720px;
+  margin: 0 auto 3rem auto;
+  box-shadow: 0 0 18px #7b1f2466;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Sobre mí */
+.sobre-mi h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 2rem;
+  color: #eee;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.sobre-mi article {
+  margin-bottom: 1.6rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #ddd;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  padding: 0 1rem;
+}
+
+.sobre-mi h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: #7b1f24;
+  margin-bottom: 0.3rem;
+  font-size: 1.3rem;
+}
+
+/* Contacto */
+.contacto h3 {
+  text-align: center;
+  color: #eee;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.contacto p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: #ddd;
+  max-width: 680px;
+  margin: 0.5rem auto 1.2rem;
+  line-height: 1.5;
+}
+
+.contacto strong {
+  color: #7b1f24;
+}
+
+.contacto a {
+  color: #7b1f24;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contacto a:hover {
+  color: #a72b2f;
+  text-shadow: 0 0 6px #a72b2fbb;
+}
+
+/* Link drive destacado */
+.drive-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-weight: 700;
+  font-size: 1.15rem;
+  background: #7b1f24;
+  color: #fff !important;
+  padding: 0.5rem 1.1rem;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #7b1f24cc;
+  transition: background 0.3s ease;
+  text-shadow: none !important;
+}
+
+.drive-link:hover {
+  background: #a72b2f;
+  box-shadow: 0 0 18px #a72b2fcc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background: #111;
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .inicio h1 {
+    font-size: 2.8rem;
+  }
+  .inicio h2 {
+    font-size: 1.4rem;
+  }
+  .magical-line {
+    font-size: 1.1rem;
+  }
+  .sobre-mi article {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+  .contacto p,
+  .intro-text {
+    font-size: 1rem;
+  }
+}
